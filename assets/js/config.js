@@ -1,5 +1,5 @@
 /**
- * CONFIGURAÇÃO — Bittar Company
+ * CONFIGURAÇÃO — Bittar Agência
  * -----------------------------
  * Único arquivo que precisa ser editado para contatos e rastreamento.
  * Site 100% estático (sem build): preencha os campos e publique.

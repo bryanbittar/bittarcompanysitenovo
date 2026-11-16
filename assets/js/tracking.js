@@ -1,5 +1,5 @@
 /**
- * RASTREAMENTO — Bittar Company
+ * RASTREAMENTO — Bittar Agência
  * Lê window.SITE_CONFIG (config.js), injeta GTM / GA4 / Google Ads / Meta Pixel
  * e expõe window.Tracking com eventos próprios no dataLayer.
  *

@@ -1,4 +1,4 @@
-/* Bittar Company — interações e animações */
+/* Bittar Agência — interações e animações */
 (function () {
   "use strict";
 
@@ -12,7 +12,7 @@
 
   document.querySelectorAll("[data-wa-link]").forEach(function (el) {
     if (!cfg.WHATSAPP_NUMBER) { el.hidden = true; return; }
-    el.href = waUrl("Olá! Vim pelo site da Bittar Company e quero saber mais sobre o diagnóstico.");
+    el.href = waUrl("Olá! Vim pelo site da Bittar Agência e quero saber mais sobre o diagnóstico.");
     el.target = "_blank";
     el.rel = "noopener";
     el.addEventListener("click", function () { window.Tracking && Tracking.whatsapp("flutuante"); });
@@ -90,7 +90,7 @@
     window.Tracking && Tracking.lead(data);
 
     var msg =
-      "Olá, Bittar Company! Quero meu diagnóstico gratuito de tráfego pago.\n\n" +
+      "Olá, Bittar Agência! Quero meu diagnóstico gratuito de tráfego pago.\n\n" +
       "Nome: " + data.nome + "\n" +
       "Empresa: " + data.empresa + "\n" +
       "Tipo de negócio: " + data.segmento + "\n" +
