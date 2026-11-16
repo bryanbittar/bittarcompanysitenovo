@@ -42,7 +42,7 @@
   /* ---------- Formulário de diagnóstico ---------- */
   var form = document.getElementById("form-diagnostico");
   var progress = form.querySelector("[data-progress]");
-  var names = ["nome", "imobiliaria", "ticket", "investimento", "whatsapp"];
+  var names = ["nome", "empresa", "segmento", "investimento", "whatsapp"];
 
   function value(name) {
     var el = form.elements[name];
@@ -83,8 +83,8 @@
     err.hidden = true;
 
     var data = {
-      nome: value("nome"), imobiliaria: value("imobiliaria"),
-      ticket: value("ticket"), investimento: value("investimento"), whatsapp: value("whatsapp"),
+      nome: value("nome"), empresa: value("empresa"),
+      segmento: value("segmento"), investimento: value("investimento"), whatsapp: value("whatsapp"),
     };
 
     window.Tracking && Tracking.lead(data);
@@ -92,8 +92,8 @@
     var msg =
       "Olá, Bittar Company! Quero meu diagnóstico gratuito de tráfego pago.\n\n" +
       "Nome: " + data.nome + "\n" +
-      "Imobiliária: " + data.imobiliaria + "\n" +
-      "Preço médio dos imóveis: " + data.ticket + "\n" +
+      "Empresa: " + data.empresa + "\n" +
+      "Tipo de negócio: " + data.segmento + "\n" +
       "Investimento em anúncios: " + data.investimento + "\n" +
       "WhatsApp: " + data.whatsapp;
 

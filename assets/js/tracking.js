@@ -77,9 +77,8 @@
       once("lead", function () {
         window.dataLayer.push({
           event: "lead_submit",
-          lead_corretores: data.corretores,
+          lead_segmento: data.segmento,
           lead_investimento: data.investimento,
-          lead_ticket: data.ticket,
         });
         if (window.fbq) window.fbq("track", "Lead", { content_name: "diagnostico" });
         if (cfg.GOOGLE_ADS_ID && cfg.GOOGLE_ADS_LEAD_LABEL) {
